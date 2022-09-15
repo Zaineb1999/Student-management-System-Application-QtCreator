@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjetCpp</class>
+ <widget class="QMainWindow" name="ProjetCpp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1062</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ProjetCpp</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1062</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Fichier(&amp;F)</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Editer(&amp;E)</string>
+    </property>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>Trier</string>
+     </property>
+     <addaction name="actionSortID"/>
+     <addaction name="actionSortName"/>
+    </widget>
+    <addaction name="actionAdd"/>
+    <addaction name="actionAlter"/>
+    <addaction name="actionDelete"/>
+    <addaction name="menu_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Affichage(&amp;V)</string>
+    </property>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>Thème</string>
+     </property>
+     <addaction name="actionOriginQss"/>
+     <addaction name="actionQssBlue"/>
+    </widget>
+    <addaction name="actionToolbar"/>
+    <addaction name="actionStatus"/>
+    <addaction name="menu_7"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Aide(&amp;H)</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSaveAs"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdd"/>
+   <addaction name="actionAlter"/>
+   <addaction name="actionDelete"/>
+   <addaction name="actionSort"/>
+   <addaction name="actionFilter"/>
+  </widget>
+  <action name="actionNew">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/new.png</normaloff>:/icon/icon/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/open.png</normaloff>:/icon/icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir(&amp;O)</string>
+   </property>
+   <property name="toolTip">
+    <string>Ouvrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/close.png</normaloff>:/icon/icon/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fermer(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Fermer</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/add.png</normaloff>:/icon/icon/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+   <property name="toolTip">
+    <string>Ajouter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/about.png</normaloff>:/icon/icon/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>À propos</string>
+   </property>
+   <property name="toolTip">
+    <string>À propos</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/save.png</normaloff>:/icon/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>Enregistrer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAlter">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/alert.png</normaloff>:/icon/icon/alert.png</iconset>
+   </property>
+   <property name="text">
+    <string>Modifier</string>
+   </property>
+   <property name="toolTip">
+    <string>Modifier</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/delete.png</normaloff>:/icon/icon/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+   <property name="toolTip">
+    <string>Supprimer</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionSortID">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/sort.png</normaloff>:/icon/icon/sort.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trier par CNE</string>
+   </property>
+   <property name="toolTip">
+    <string>Trier par CNE</string>
+   </property>
+  </action>
+  <action name="actionSortName">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/sort.png</normaloff>:/icon/icon/sort.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trier par nom</string>
+   </property>
+   <property name="toolTip">
+    <string>Trier par nom</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/print.png</normaloff>:/icon/icon/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Imprimer(&amp;P)</string>
+   </property>
+   <property name="toolTip">
+    <string>Imprimer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/saveAs.png</normaloff>:/icon/icon/saveAs.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer sous(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>Enregistrer sous</string>
+   </property>
+  </action>
+  <action name="actionTabBar">
+   <property name="text">
+    <string>Mode d'étiquette de fenêtre</string>
+   </property>
+   <property name="toolTip">
+    <string>Mode d'étiquette de fenêtre</string>
+   </property>
+  </action>
+  <action name="actionWindow">
+   <property name="text">
+    <string>Mode fenêtre</string>
+   </property>
+   <property name="toolTip">
+    <string>Mode fenêtre</string>
+   </property>
+  </action>
+  <action name="actionSascadeSubWindows">
+   <property name="text">
+    <string>Arrangement de chevauchement</string>
+   </property>
+   <property name="toolTip">
+    <string>Arrangement de chevauchement</string>
+   </property>
+  </action>
+  <action name="actionTileSubWindows">
+   <property name="text">
+    <string>Bien agencé</string>
+   </property>
+   <property name="toolTip">
+    <string>Bien agencé</string>
+   </property>
+  </action>
+  <action name="actionSort">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/sort.png</normaloff>:/icon/icon/sort.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trier</string>
+   </property>
+   <property name="toolTip">
+    <string>Trier</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/search .png</normaloff>:/icon/icon/search .png</iconset>
+   </property>
+   <property name="text">
+    <string>Filtrer</string>
+   </property>
+   <property name="iconText">
+    <string>Filtrer</string>
+   </property>
+   <property name="toolTip">
+    <string>Filtrer</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Afficher la barre d'outils</string>
+   </property>
+   <property name="toolTip">
+    <string>Afficher la barre d'outils</string>
+   </property>
+  </action>
+  <action name="actionStatus">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Afficher la barre d'état</string>
+   </property>
+   <property name="toolTip">
+    <string>Afficher la barre d'état</string>
+   </property>
+  </action>
+  <action name="actionOriginQss">
+   <property name="text">
+    <string>Thème Original</string>
+   </property>
+   <property name="toolTip">
+    <string>Thème Original</string>
+   </property>
+  </action>
+  <action name="actionQssBlue">
+   <property name="text">
+    <string>Thème bleu</string>
+   </property>
+   <property name="toolTip">
+    <string>Thème bleu</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

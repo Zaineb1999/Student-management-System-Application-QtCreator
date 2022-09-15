@@ -1,0 +1,4 @@
+Ne modifier pas les données directement ici!
+1 ZAINEB_MOUSLIH Fille 12/12/99 Casablanca Casablanca_Maroc 
+2 ZINEB_FAOUZ_IDRISSI Fille 1/1/99 Casablanca Casablanca_Maroc 
+3 ALAA_BOUAGADA Garçon 1/1/99 Tiflet Tiflet_Maroc 

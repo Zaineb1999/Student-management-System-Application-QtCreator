@@ -1,0 +1,13 @@
+Ne modifier pas les données directement ici!
+1 HAMZA_ACHEHBOUNE Garçon 1/1/98 Dakhla Dakhla Maroc 
+2 YOUSSEF_AKACHAR Garçon 1/1/98 Casablanca Casablanca Maroc 
+3 ABADILA_ALAKTIF Garçon 1/1/99 Dakhla Dakhla Maroc 
+4 ACHRAF_ATIA Garçon 1/1/98 Casablanca Casablanca Maroc 
+5 FAYZA_ATIBI Fille 1/1/99 Marrakech Marrakech Maroc 
+6 RKIA_BADAOUI Fille 1/1/99 Zagoura Zagoura Maroc 
+7 CHAIMAA_BAHJAJI Fille 1/1/99 Guelmim Guelmim Maroc 
+8 ELMAHDI_BAHOU Garçon 1/1/99 Tiflet Tiflet Maroc 
+9 HAMZA_BELKOUCH Garçon 1/1/20 Casablanca Casablanca Maroc 
+10 ASMAE_BENKHOUYA Fille 1/1/99 Casablanca Casablanca Maroc 
+11 ALAA_BOUAGADA(DUT) Garçon 1/1/99 Tiflet Tiflet Maroc 
+12 ANOUAR_BOUHMID Garçon 1/1/99 Casablanca Casablanca Maroc 
